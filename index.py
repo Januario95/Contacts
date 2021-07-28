@@ -36,7 +36,9 @@ class BankAcc:
         self.__balance += amount
         return self.__balance
 
-        
+    def withdraw(self, amount):
+        self.__balance -= amount
+        return amount
 
 
 
@@ -47,4 +49,4 @@ print(acc.balance)
 acc.deposit(1200)
 print(acc.balance)
 acc.deposit(300)
-print(acc.balance)
+print(acc.withdraw(450))
