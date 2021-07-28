@@ -33,6 +33,12 @@ class BankAcc:
         return self.__balance
 
     def deposit(self, amount):
+        if amount < 1:
+            print('Cannot deposit negative amount')
+            return
+        if amount > 10000:
+            print('Cannot deposit amout greater than 10000')
+            return 
         self.__balance += amount
         return self.__balance
 
