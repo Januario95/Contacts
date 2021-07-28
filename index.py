@@ -11,3 +11,14 @@ class BankAcc:
         self.__name = name
         self.__acc_nr = acc_nr
         self.__balance = balance
+
+    @property
+    def name(self):
+        return self.__name 
+
+    @name.setter
+    def name(self, new_name):
+        self.__name = new_name 
+
+acc = BankAcc('Olga Matias', 706714264, 0)
+print(acc.name)
