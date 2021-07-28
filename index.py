@@ -37,9 +37,14 @@ class BankAcc:
         return self.__balance
 
     def withdraw(self, amount):
+        if self.balance < amount:
+            print('Unsufficient funds')
+            return
         self.__balance -= amount
         return amount
 
+    def __str__(self):
+        return f'{self.name} - {self.acc_nr} - RM {self.balance}'
 
 
 acc = BankAcc('Olga Matias', 706714264, 0)
@@ -49,4 +54,5 @@ print(acc.balance)
 acc.deposit(1200)
 print(acc.balance)
 acc.deposit(300)
-print(acc.withdraw(450))
+print(acc.withdraw(5450))
+print(acc)
