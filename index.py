@@ -41,6 +41,9 @@ class Person(object):
     def social_sec_nr(self, new_nr):
         self.__social_sec_nr = new_nr
 
+    def __str__(self):
+        return f'{self.name} - {self.age} - {self.social_sec_nr}'
+
 
 person = Person('Olga Matias', 24, 235234)
-print(person.social_sec_nr)
+print(person)
