@@ -28,11 +28,22 @@ class BankAcc:
     def acc_nr(self, new_nr):
         self.__acc_nr = new_nr
 
+    @property
+    def balance(self):
+        return self.__balance
+
+    @balance.setter
+    def balance(self, new_balance):
+        self.__balance = new_balance
+
 acc = BankAcc('Olga Matias', 706714264, 0)
 print(acc.name)
 print(acc.acc_nr)
+print(acc.balance)
 
 acc.name = 'Reinata Mauricio'
 acc.acc_nr = 706714523
+acc.balance = 1200
 print(acc.name)
 print(acc.acc_nr)
+print(acc.balance)
