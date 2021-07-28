@@ -44,6 +44,5 @@ class Person(object):
     def __str__(self):
         return f'{self.name} - {self.age} - {self.social_sec_nr}'
 
-
-person = Person('Olga Matias', 24, 235234)
-print(person)
+    def __repr__(self):
+        return f'<Person ({self.name} - {self.age} - {self.social_sec_nr})>'
