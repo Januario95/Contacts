@@ -36,6 +36,8 @@ class BankAcc:
         self.__balance += amount
         return self.__balance
 
+        
+
 
 
 acc = BankAcc('Olga Matias', 706714264, 0)
