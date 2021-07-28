@@ -36,6 +36,12 @@ class BankAcc:
     def balance(self, new_balance):
         self.__balance = new_balance
 
+    def deposit(self, amount):
+        self.__balance += amount
+        return self.__balance
+
+
+
 acc = BankAcc('Olga Matias', 706714264, 0)
 print(acc.name)
 print(acc.acc_nr)
