@@ -33,6 +33,14 @@ class Person(object):
     def age(self, new_age):
         self.__age = new_age
 
+    @property
+    def social_sec_nr(self):
+        return self.__social_sec_nr
+
+    @social_sec_nr.setter
+    def social_sec_nr(self, new_nr):
+        self.__social_sec_nr = new_nr
+
 
 person = Person('Olga Matias', 24, 235234)
-print(person.age)
+print(person.social_sec_nr)
