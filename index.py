@@ -47,12 +47,3 @@ class BankAcc:
         return f'{self.name} - {self.acc_nr} - RM {self.balance}'
 
 
-acc = BankAcc('Olga Matias', 706714264, 0)
-acc.name = 'Reinata Mauricio'
-acc.acc_nr = 706714523
-print(acc.balance)
-acc.deposit(1200)
-print(acc.balance)
-acc.deposit(300)
-print(acc.withdraw(5450))
-print(acc)
